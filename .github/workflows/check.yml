@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check the showcase
-        run: python3 scripts/check_showcase.py
+        run: php scripts/check_showcase.php

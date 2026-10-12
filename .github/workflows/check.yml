@@ -1,0 +1,19 @@
+name: Showcase check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Links, images and no source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the showcase
+        run: python3 scripts/check_showcase.py

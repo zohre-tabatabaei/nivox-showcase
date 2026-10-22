@@ -36,9 +36,9 @@ Every page follows the visual language set by the homepage, so the store reads a
 ### On mobile
 
 <p>
-  <img src="screenshots/home-mobile.webp" alt="NIVOX homepage on mobile" width="300">
-  &nbsp;&nbsp;
   <img src="screenshots/women-mobile.webp" alt="The Women collection on mobile" width="300">
+  &nbsp;&nbsp;
+  <img src="screenshots/home-mobile.webp" alt="NIVOX homepage on mobile" width="300">
 </p>
 
 ## Highlights

@@ -58,8 +58,6 @@ Every page follows the visual language set by the homepage, so the store reads a
 - A seed that rebuilds the whole showcase store, photos included, with one command
 - Continuous integration on every change: syntax checks, a repository safety check, the seed run twice on a fresh database, integration tests, and a smoke test of the storefront pages
 
-**Admin panel:** in progress, to be shown here once it is ready.
-
 ## Rights
 
 © 2026 Zohre Tabatabaei. All rights reserved.

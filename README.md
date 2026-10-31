@@ -14,6 +14,7 @@ Everything on the live store works: browse the collections, add frames to the ba
 
 - Open the account icon and choose **Continue as Demo** to shop as a signed-in customer.
 - Payments run in Stripe's test mode, so nothing real is charged. Each visitor works in a private copy of the store's data.
+- Demo orders are dated from today, so a recent delivery can always be returned.
 
 ## Design
 
@@ -48,13 +49,17 @@ Every page follows the visual language set by the homepage, so the store reads a
 - Women, Men and Unisex collections with style filters, sorting and a price range; switching between them happens in place, with its own URL and Back/Forward support
 - A frosted-glass Add to Cart that slides in on hover, and a mobile Filter & Sort sheet
 - Product pages with gallery and reviews, cart, checkout and order history, favorites
+- Returns from the account: choose an order and its frames, and add photos if something arrived damaged
 - A journal with categories and search on clean addresses, a category bar that stays in reach while reading, and comments
 - Live support chat
 
 **Under the hood**
 - PHP 8.2 and MySQL / MariaDB, with no framework
-- Stripe Checkout with signed webhooks, and installment plans
-- Phone OTP and Google sign-in
+- Stripe Checkout with signed webhooks
+- US sales tax by delivery state, shown live at checkout and saved on the order
+- Sign-in with email, phone or Google is built in; the live showcase uses the demo account, with those methods switched off
+- Customer photos on returns are private: only the customer and the store's team can open them
+- Uploaded pictures are checked and redrawn on the server, so only pixels are stored
 - A seed that rebuilds the whole showcase store, photos included, with one command
 - Continuous integration on every change: syntax checks, a repository safety check, the seed run twice on a fresh database, integration tests, and a smoke test of the storefront pages
 

@@ -56,6 +56,7 @@ Every page follows the visual language set by the homepage, so the store reads a
 **Under the hood**
 - PHP 8.2 and MySQL / MariaDB, with no framework
 - Stripe Checkout with signed webhooks
+- - Payments the store cannot keep (an item sold out, an order already canceled, a second payment for the same order) are refunded through Stripe automatically
 - US sales tax by delivery state, shown live at checkout and saved on the order
 - Sign-in with email, phone or Google is built in; the live showcase uses the demo account, with those methods switched off
 - Customer photos on returns are private: only the customer and the store's team can open them
